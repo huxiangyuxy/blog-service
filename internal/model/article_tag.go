@@ -4,6 +4,7 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+// ArticleTag 文章+标签映射
 type ArticleTag struct {
 	*Model
 	TagID     uint32 `json:"tag_id"`

@@ -16,6 +16,7 @@ const (
 	STATE_CLOSE = 0
 )
 
+// Model 通用公共字段
 type Model struct {
 	ID         uint32 `gorm:"primary_key" json:"id"`
 	CreatedBy  string `json:"created_by"`

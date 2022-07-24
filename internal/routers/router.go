@@ -29,7 +29,9 @@ var methodLimiters = limiter.NewMethodLimiter().AddBuckets(
 func NewRouter() *gin.Engine {
 	r := gin.New()
 	if global.ServerSetting.RunMode == "debug" {
+		// 输出请求日志
 		r.Use(gin.Logger())
+		// 异常捕获
 		r.Use(gin.Recovery())
 	} else {
 		r.Use(middleware.AccessLog())

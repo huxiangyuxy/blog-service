@@ -5,6 +5,7 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+// Article 文章管理
 type Article struct {
 	*Model
 	Title         string `json:"title"`

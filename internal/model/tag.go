@@ -5,6 +5,7 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+// Tag 标签管理
 type Tag struct {
 	*Model
 	Name  string `json:"name"`

@@ -2,6 +2,7 @@ package model
 
 import "github.com/jinzhu/gorm"
 
+// Auth 认证管理
 type Auth struct {
 	*Model
 	AppKey    string `json:"app_key"`
