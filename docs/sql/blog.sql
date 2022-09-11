@@ -1,3 +1,10 @@
+CREATE DATABASE
+    IF
+    NOT EXISTS blog_service DEFAULT CHARACTER
+    SET utf8mb4 DEFAULT COLLATE utf8mb4_general_ci;
+
+use blog_service;
+
 CREATE TABLE `blog_tag` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(100) DEFAULT '' COMMENT '标签名称',
